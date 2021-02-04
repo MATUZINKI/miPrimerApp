@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+/* generales  */
+*{
+    font-family: 'Cinzel', serif; 
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #30992b;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+article{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+::placeholder{
+    color: white;
+}
+
+/* primer pantalla */
+#pantalla1{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dos_rectangulos, .tres_rectangulos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dos_rectangulos{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dos_rectangulos input{
+    width: 75%;
+    height: 15%;
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 6rem;
+    margin: 7% 0%;
+}
+
+.dos_horizontales{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dos_horizontales input{
+    margin: 1%;
+    width: 37%;
+    height: 30%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.seleccionado{
+    border: 2px solid white;
+    color: white;
+}
+
+.no_seleccionado{
+    border: 2px solid rgba(255,255,255, 0.5);
+    color: rgba(255,255,255, 0.5);
+}
+
+
+/* segunda pantalla */
+
+#pantalla2{
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.encabezado, .pie{
+    width: 100%;
+    height: 15%;
+}
+
+.tablero{
+    width: 100%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+}
+
+/* cabecera y pie del tablero */
+
+.primer_mitad, .segunda_mitad {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.primer_mitad{
+    border-right: 2px solid white;
+}
+
+.primer_mitad input, .segunda_mitad input{
+    width: 30%;
+    height: 70%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 5rem;
+}
+
+.texto_equipo{
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.nombre_equipo{
+    color: white;
+    font-size: 5rem;
+    margin-top: 11%;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+}
+
+#mini_pie{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+#tope{
+    color: white;
+    font-size: 3rem;
+}
+
+.botones_pie{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boton_pie{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+}
+
+.botones_pie input{
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.boton_pie p{
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    color: white;
+    margin-top: 50%;
+}
+
+/* centro del tablero */
+
+.medio_tablero{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuarto_tablero{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.cuarto_tablero:first-child{
+    border-right: 2px solid white;
+}
+
+.borde_inf{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+
+
+
+
+
+/* visibilidad */
+.visible {
+    display: flex;
+    visibility: visible;
+}
+
+.oculto {
+    display: none;
+    visibility: hidden;
+}
+
+.ocupa {
+    display: block;
+    visibility:hidden;
+}

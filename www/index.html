@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MAT TP Integrador</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <article id="pantalla1" class="visible"> 
+        <!-- <div class="contenedor_pantalla"> -->
+            <form action="#">
+                <div class="dos_rectangulos">
+                <input type="text" id="e1" value="" placeholder="Equipo 1" maxlength="6"></input>
+                <input type="text" id="e2" value="" placeholder="Equipo 2" maxlength="6"></input>
+                </div>
+                <div class="tres_rectangulos">
+                    <div class="dos_horizontales botonerita">
+                        <input type="button" id="24j" class="no_seleccionado" value="24"></input>
+                        <input type="button" id="30j" class="seleccionado" value="30"></input>
+                    </div>
+                    <div class="dos_horizontales">
+                        <input type="button" class="ocupa" value="0"></input>
+                        <input type="submit" id="iniciar" class="seleccionado" value="Iniciar"></input>
+                    </div>
+                </div>
+            </form>
+        <!-- </div> -->
+    </article>
+    <article id="pantalla2" class="oculto"> 
+        <!-- <div class="contenedor_pantalla"> -->
+            <div class="encabezado">
+                <div class="primer_mitad">
+                    <input type="button" id="sumae1" value="+"></input>
+                    <div class="texto_equipo">
+                        <p class="nombre_equipo" id="equipo1"></p>
+                    </div>
+                </div>
+                <div class="segunda_mitad">
+                    <div class="texto_equipo">
+                        <p class="nombre_equipo" id="equipo2"></p>
+                    </div>
+                    <input type="button" id="sumae2" value="+"></input>
+                </div>
+            </div>
+            <div class="tablero">
+                <div class="medio_tablero">
+                    <div class="cuarto_tablero borde_inf">
+                        <img id="ime10" src="img/0.png" >
+                        <img id="ime11" src="img/0.png" >
+                        <img id="ime12" src="img/0.png" >
+                    </div>
+                    <div class="cuarto_tablero borde_inf">
+                        <img id="ime20" src="img/0.png" >
+                        <img id="ime21" src="img/0.png" >
+                        <img id="ime22" src="img/0.png" >
+                    </div>
+                </div>
+                <div class="medio_tablero">
+                    <div class="cuarto_tablero">
+                        <img id="ime13" src="img/0.png" >
+                        <img id="ime14" src="img/0.png" >
+                        <img id="ime15" src="img/0.png" >
+                    </div>
+                    <div class="cuarto_tablero">
+                        <img id="ime23" src="img/0.png" >
+                        <img id="ime24" src="img/0.png" >
+                        <img id="ime25" src="img/0.png" >
+                    </div>
+                </div>
+            </div>
+            <div class="pie">
+                <div id="mini_pie">
+                    <p id="tope"></p>
+                </div>
+                <div class="botones_pie">
+                    <input class="boton_pie" id="restae1" type="button" value="-"></input>
+                    <div class="boton_pie"><p id="resultado_equipo1"></p></div>
+                    <input class="boton_pie" id="fin" type="button" value="Fin"></input>
+                    <div class="boton_pie"><p id="resultado_equipo2"></p></div>
+                    <input class="boton_pie" id="restae2" type="button" value="-"></input>
+                </div>
+            </div>
+        <!-- </div> -->
+    </article>
+</body>
+</html>
